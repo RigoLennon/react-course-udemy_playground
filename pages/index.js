@@ -1,6 +1,7 @@
 import Header from '../components/comunes/Header';
 import ClaseComponent from '../components/ClaseComponent';
 import NavBar from '../components/comunes/NavBar';
+import Link from 'next/link';
 import {matematicas_clase, ciencias_clase, computacion_clase} from '../data/estudiantes';
 
 function index (){
@@ -8,6 +9,10 @@ function index (){
         <div>
             <Header />
             <NavBar />
+            <div>
+                <h1>Calculadora de gastos</h1>
+                <a className="waves-effect waves-light btn"><Link href="/gastos">OK</Link></a>
+            </div>
             <h1 style={{textAlign:"center"}}>Cursos del plan </h1>
             <div style={{display:"flex", justifyContent:"space-around"}}>
                 <ClaseComponent nombre_clase="Matematicas" alumnos={matematicas_clase}/>

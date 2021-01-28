@@ -9,7 +9,7 @@ class Calculadora extends React.Component{
     onDigit = (digit) =>{
         const expresion = this.state.res + digit 
         this.setState({
-            res:expresion
+            res: expresion
         })
     }
 

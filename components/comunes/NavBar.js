@@ -7,6 +7,7 @@ export default () => (
       <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li><Link href="/"><a>Home</a></Link></li>
         <li><Link href="/calc"><a>Calculadora</a></Link></li>
+        <li><Link href="/test"><a>Test</a></Link></li>
       </ul>
     </div>
   </nav>

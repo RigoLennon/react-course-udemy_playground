@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "export": "npm run build && next export -o _static"
   },
   "keywords": [],
   "author": "",
