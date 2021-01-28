@@ -37,43 +37,39 @@ const GastosFijos = () =>{
         })
     }
 
-    console.log('total: ' + totalGastosFijos)
+    var viv_renta_int = parseInt(datos.viv_renta, 10)
+    var viv_hipoteca_int = parseInt(datos.viv_hipoteca, 10)
+    var viv_manteni_int = parseInt(datos.viv_manteni, 10)
+    var edu_colegio_int = parseInt(datos.edu_colegio, 10)
+    var edu_clase_extr_int = parseInt(datos.edu_clase_extr, 10)
+    var seg_gas_medico_int = parseInt(datos.seg_gas_medico, 10)
+    var seg_dental_int = parseInt(datos.seg_dental, 10)
+    var seg_auto_int = parseInt(datos.seg_auto, 10)
+    var seg_casa_int = parseInt(datos.seg_casa, 10)
+    var seg_vida_int = parseInt(datos.seg_vida, 10)
+    var seg_retiro_int = parseInt(datos.seg_retiro, 10)
+    var aho_meta_int = parseInt(datos.aho_meta, 10)
+    var aho_inversio_int = parseInt(datos.aho_inversion, 10)
+    var sus_hbo_int = parseInt(datos.sus_hbo, 10)
+    var sus_netflix_int = parseInt(datos.sus_netflix, 10)
+    var sus_apple_int = parseInt(datos.sus_apple, 10)
+    var sus_spotify_int = parseInt(datos.sus_spotify, 10)
+    var sus_cable_int = parseInt(datos.sus_cable, 10)
+    var sus_gym_int = parseInt(datos.sus_gym, 10)
+    var deu_cred_edu_int = parseInt(datos.deu_cred_edu, 10)
+    var deu_prestamo_int = parseInt(datos.deu_prestamo, 10)
+    var deu_tanda_int = parseInt(datos.deu_tanda, 10)
 
-        var viv_renta_int = parseInt(datos.viv_renta, 10)
-        var viv_hipoteca_int = parseInt(datos.viv_hipoteca, 10)
-        var viv_manteni_int = parseInt(datos.viv_manteni, 10)
-        var edu_colegio_int = parseInt(datos.edu_colegio, 10)
-        var edu_clase_extr_int = parseInt(datos.edu_clase_extr, 10)
-        var seg_gas_medico_int = parseInt(datos.seg_gas_medico, 10)
-        var seg_dental_int = parseInt(datos.seg_dental, 10)
-        var seg_auto_int = parseInt(datos.seg_auto, 10)
-        var seg_casa_int = parseInt(datos.seg_casa, 10)
-        var seg_vida_int = parseInt(datos.seg_vida, 10)
-        var seg_retiro_int = parseInt(datos.seg_retiro, 10)
-        var aho_meta_int = parseInt(datos.aho_meta, 10)
-        var aho_inversio_int = parseInt(datos.aho_inversion, 10)
-        var sus_hbo_int = parseInt(datos.sus_hbo, 10)
-        var sus_netflix_int = parseInt(datos.sus_netflix, 10)
-        var sus_apple_int = parseInt(datos.sus_apple, 10)
-        var sus_spotify_int = parseInt(datos.sus_spotify, 10)
-        var sus_cable_int = parseInt(datos.sus_cable, 10)
-        var sus_gym_int = parseInt(datos.sus_gym, 10)
-        var deu_cred_edu_int = parseInt(datos.deu_cred_edu, 10)
-        var deu_prestamo_int = parseInt(datos.deu_prestamo, 10)
-        var deu_tanda_int = parseInt(datos.deu_tanda, 10)
+    const resVivienda = (viv_renta_int + viv_hipoteca_int + viv_manteni_int);
+    const resEducacion = (edu_colegio_int + edu_clase_extr_int);
+    const resSeguro = (seg_gas_medico_int + seg_dental_int + seg_dental_int + seg_auto_int + seg_casa_int + seg_vida_int + seg_retiro_int);
+    const resAhorro = (aho_meta_int + aho_inversio_int);
+    const resSuscripciones = (sus_hbo_int + sus_netflix_int + sus_apple_int + sus_spotify_int + sus_cable_int + sus_gym_int);
+    const resDeudas = (deu_cred_edu_int + deu_prestamo_int + deu_tanda_int);
 
-        const resVivienda = (viv_renta_int + viv_hipoteca_int + viv_manteni_int);
-        const resEducacion = (edu_colegio_int + edu_clase_extr_int);
-        const resSeguro = (seg_gas_medico_int + seg_dental_int + seg_dental_int + seg_auto_int + seg_casa_int + seg_vida_int + seg_retiro_int);
-        const resAhorro = (aho_meta_int + aho_inversio_int);
-        const resSuscripciones = (sus_hbo_int + sus_netflix_int + sus_apple_int + sus_spotify_int + sus_cable_int + sus_gym_int);
-        const resDeudas = (deu_cred_edu_int + deu_prestamo_int + deu_tanda_int);
-
-        const resultadoGastosFijos = (
-            resVivienda + resEducacion + resSeguro + resAhorro + resSuscripciones + resDeudas
-        )
-
-        console.log('total de totales' + resultadoGastosFijos);
+    const resultadoGastosFijos = (
+        resVivienda + resEducacion + resSeguro + resAhorro + resSuscripciones + resDeudas
+    )
 
     return(
         <div>
